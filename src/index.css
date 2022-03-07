@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  color: #222;
+  font-size: 14px;
+  /* font-family: 'Roboto', 'Noto Sans KR', AppleSDGothicNeo-Regular,
+    'Malgun Gothic', '맑은 고딕', dotum, '돋움', sans-serif; */
+  line-height: 1.25em;
+  word-wrap: break-word;
+}
+
+ul,
+li {
+  list-style: none;
+}
