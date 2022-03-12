@@ -14,4 +14,9 @@ export const Block = styled.div`
     width: 736px;
     min-height: 800px;
   }
+
+  .aside {
+    width: 300px;
+    margin-left: 64px;
+  }
 `;
