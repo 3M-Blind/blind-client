@@ -12,10 +12,14 @@ code {
     monospace;
 }
 
+div,
 h1,
 h2,
+img,
+input,
 ul,
-li {
+li,
+p {
   margin: 0;
   padding: 0;
   color: #222;
@@ -33,4 +37,16 @@ li {
 
 a {
   text-decoration: none;
+  color: #222;
+}
+
+button {
+  overflow: visible;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+em {
+  font-style: normal;
 }

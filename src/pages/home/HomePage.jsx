@@ -1,19 +1,16 @@
 import React from 'react';
 import { Block } from './HomePage.styles';
 
+import Search from '../../components/search/Search';
 import TopicBest from '../../components/topicBest/TopicBest';
+import ListRanking from '../../components/listRanking/ListRanking';
 
 function HomePage(props) {
   return (
     <Block>
       {/* <h1>홈</h1> */}
       <div className="main">
-        <section>
-          {/* <h1>검색</h1>
-          <span></span>
-          <input />
-          <button></button> */}
-        </section>
+        <Search />
         <div>
           <TopicBest />
           {/* <div>Best</div> */}
@@ -22,6 +19,9 @@ function HomePage(props) {
         </div>
         <div></div>
       </div>
+      <aside className="aside">
+        <ListRanking />
+      </aside>
     </Block>
   );
 }
