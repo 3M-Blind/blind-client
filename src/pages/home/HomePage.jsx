@@ -1,6 +1,7 @@
 import React from 'react';
 import { Block } from './HomePage.styles';
 
+import Search from '../../components/search/Search';
 import TopicBest from '../../components/topicBest/TopicBest';
 
 function HomePage(props) {
@@ -8,12 +9,7 @@ function HomePage(props) {
     <Block>
       {/* <h1>홈</h1> */}
       <div className="main">
-        <section>
-          {/* <h1>검색</h1>
-          <span></span>
-          <input />
-          <button></button> */}
-        </section>
+        <Search />
         <div>
           <TopicBest />
           {/* <div>Best</div> */}
