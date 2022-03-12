@@ -16,7 +16,7 @@ export const Block = styled.div`
     padding-left: 35px;
     border-bottom-width: 2px;
     font-size: 18px;
-    line-height: 45px;
+    line-height: 43px;
   }
 
   & > h2 > i {
@@ -43,7 +43,7 @@ export const Block = styled.div`
     text-align: center;
 
     position: absolute;
-    top: -2px;
+    top: 0;
     right: 0;
     padding-right: 16px;
     color: #222;
@@ -59,5 +59,9 @@ export const Block = styled.div`
     right: 0;
     width: 16px;
     height: 16px;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
 `;
