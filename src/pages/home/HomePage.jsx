@@ -4,6 +4,7 @@ import { Block } from './HomePage.styles';
 import Search from '../../components/search/Search';
 import TopicBest from '../../components/topicBest/TopicBest';
 import ListRanking from '../../components/listRanking/ListRanking';
+import Topic from '../../components/topic/Topic';
 
 function HomePage(props) {
   return (
@@ -11,11 +12,14 @@ function HomePage(props) {
       {/* <h1>홈</h1> */}
       <div className="main">
         <Search />
-        <div>
+        <div className="home-list">
           <TopicBest />
-          {/* <div>Best</div> */}
           {/* 25개 */}
-          <div>Topic</div>
+          {Array(25)
+            .fill()
+            .map((el, i) => (
+              <Topic key={i} />
+            ))}
         </div>
         <div></div>
       </div>
