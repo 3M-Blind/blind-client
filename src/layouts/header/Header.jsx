@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   HeaderBlock,
   Wrapped,
@@ -41,6 +42,10 @@ function Header(props) {
         </nav>
         <Func>
           <div>
+            <BtnPost>
+              <Link to="/signup">회원가입</Link>
+            </BtnPost>
+
             <BtnPost>글쓰기</BtnPost>
             <BtnSignin>로그인</BtnSignin>
           </div>
