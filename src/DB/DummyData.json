@@ -1,0 +1,27 @@
+{
+  "TopicBestArticleList": [
+    {
+      "id": 1,
+      "topic": "토픽1",
+      "title": "제목1",
+      "like": 10,
+      "comment": 7
+    },
+    {
+      "id": 2,
+      "topic": "토픽2",
+      "title": "제목2",
+      "like": 5,
+      "comment": 2
+    },
+    {
+      "id": 3,
+      "topic": "토픽3",
+      "title": "제목3",
+      "like": 9,
+      "comment": 103
+    }
+  ],
+
+  "ArticleList": []
+}

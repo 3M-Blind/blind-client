@@ -15,15 +15,6 @@ export const Block = styled.div`
     min-height: 800px;
   }
 
-  .home-list {
-    display: flex;
-    flex-wrap: wrap;
-    border-top: 8px solid #f2f2f3;
-
-    // @media screen and (min-width: 1100px)
-    border-top: none;
-  }
-
   .aside {
     width: 300px;
     margin-left: 64px;

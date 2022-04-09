@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
 export const Block = styled.div`
   position: relative;
@@ -51,7 +51,7 @@ export const Block = styled.div`
   }
 
   & a:after {
-    content: '';
+    content: "";
     background: url(https://d2u3dcdbebyaiu.cloudfront.net/img/www_kr/sp-kr.png)
       no-repeat;
     background-size: 600px 900px;

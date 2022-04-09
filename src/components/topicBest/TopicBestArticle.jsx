@@ -1,7 +1,21 @@
-import React from 'react';
+import { Link } from "react-router-dom";
 
-function TopicBestArticle() {
-  return <div>article</div>;
+export default function TopicBestArticle({ topicBestArticle }) {
+  // console.log(topicBestArticle);
+  return (
+    <div>
+      <span>
+        <Link to="topics">@주제</Link>
+      </span>
+      <Link to="post">@제목: {topicBestArticle.title}</Link>
+      <div>
+        <a href="#">
+          <i>@좋아요: {topicBestArticle.like}</i>
+        </a>
+        <a href="#">
+          <i>@댓글: {topicBestArticle.comment}</i>
+        </a>
+      </div>
+    </div>
+  );
 }
-
-export default TopicBestArticle;
