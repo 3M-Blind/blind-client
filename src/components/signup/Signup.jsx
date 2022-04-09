@@ -34,7 +34,7 @@ const Signup = () => {
     e.preventDefault();
 
     const data = axios.post(
-      `${serverUrl}/users/login`,
+      `${serverUrl}/register`,
       {
         email: email,
         username: username,
