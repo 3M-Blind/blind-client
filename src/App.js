@@ -21,8 +21,8 @@ function App() {
           <Route path="signin" element={<SigninPage />} />
           <Route path="signup" element={<SignupPage />} />
           <Route path="signup" element={<SignupPage />} />
-          <Route path="topics/:sdsjkd" element={<TopicsPage />} />
-          <Route path="post" element={<PostPage />} />
+          <Route path="topics" element={<TopicsPage />} />
+          <Route path="post/:postID" element={<PostPage />} />
         </Routes>
       </section>
       <Footer />
