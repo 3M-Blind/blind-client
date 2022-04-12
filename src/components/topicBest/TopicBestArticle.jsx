@@ -5,7 +5,9 @@ export default function TopicBestArticle({ topicBestArticle }) {
   return (
     <div>
       <span>
-        <Link to="topics">@주제: {topicBestArticle.topic}</Link>
+        <Link to={`topics/${topicBestArticle.topic}`}>
+          @주제: {topicBestArticle.topic}
+        </Link>
       </span>
       <Link to={`post/${topicBestArticle.postID}`}>
         @제목: {topicBestArticle.title}

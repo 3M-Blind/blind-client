@@ -10,7 +10,6 @@ import SignupPage from "./pages/signup/SignupPage";
 import TopicsPage from "./pages/Topics/TopicsPage";
 import PostPage from "./pages/Post/PostPage";
 
-// https://www.teamblind.com/kr/topics/블라블라
 function App() {
   return (
     <div className="App">
@@ -21,7 +20,7 @@ function App() {
           <Route path="signin" element={<SigninPage />} />
           <Route path="signup" element={<SignupPage />} />
           <Route path="signup" element={<SignupPage />} />
-          <Route path="topics" element={<TopicsPage />} />
+          <Route path="topics/:topic" element={<TopicsPage />} />
           <Route path="post/:postID" element={<PostPage />} />
         </Routes>
       </section>
