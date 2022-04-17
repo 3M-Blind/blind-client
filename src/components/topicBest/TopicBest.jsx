@@ -1,20 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Block } from "./TopicBest.styles";
+import axios from "axios";
 
+import { Block } from "./TopicBest.styles";
 import TopicBestArticle from "./TopicBestArticle";
+import { useTopicBestArticles } from "../../DB/DummyLoader";
 
 function TopicBest() {
-  const [topicBestArticleList, setTopicBestArticleList] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:3001/TopicBestArticleList")
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        setTopicBestArticleList(data);
-      });
-  }, []);
+  const topicBestArticleList = useTopicBestArticles();
 
   return (
     <Block>
@@ -28,16 +20,10 @@ function TopicBest() {
         return (
           <TopicBestArticle
             topicBestArticle={topicBestArticle}
-            key={topicBestArticle.id}
+            key={topicBestArticle.postID}
           ></TopicBestArticle>
         );
       })}
-
-      {/* {Array(10)
-        .fill()
-        .map((el) => (
-          <TopicBestArticle />
-        ))} */}
       <a href="#">더보기</a>
     </Block>
   );

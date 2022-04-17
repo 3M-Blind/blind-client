@@ -1,4 +1,6 @@
+import { useParams } from "react-router-dom";
+
 export default function TopicsPage() {
-  // console.log(topicBestArticle);
-  return <div>Topics 페이지</div>;
+  const { topic } = useParams();
+  return <div>{topic} 페이지</div>;
 }

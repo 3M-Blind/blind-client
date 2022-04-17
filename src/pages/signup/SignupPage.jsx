@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import Signup from '../../components/signup/Signup';
+import Signup from "./Signup";
 
 function SignupPage(props) {
   return (
