@@ -1,6 +1,11 @@
-import { useParams } from "react-router-dom";
+import { useParams } from 'react-router-dom';
+import TopicSelect from './TopicSelect';
 
 export default function TopicsPage() {
   const { topic } = useParams();
-  return <div>{topic} 페이지</div>;
+  return (
+    <div>
+      <TopicSelect></TopicSelect>
+    </div>
+  );
 }
