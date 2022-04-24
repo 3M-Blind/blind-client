@@ -7,7 +7,7 @@ import {
   Func,
   BtnPost,
   BtnSignin,
-} from './styles';
+} from './styles/Header.styles';
 
 function Header(props) {
   return (

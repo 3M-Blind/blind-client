@@ -1,26 +1,16 @@
 import React from 'react';
-import { Block } from './Topic.styles';
+import { useParams } from 'react-router-dom';
 
-import TopicArticle from './TopicArticle';
+import TopicSelect from './TopicSelect';
 
-function Topic() {
+const Topic = () => {
+  const { topic } = useParams();
+  console.log(topic);
   return (
-    <Block>
-      <h2>
-        <i>
-          <img />
-        </i>
-        블라블라
-      </h2>
-      <div>
-        {Array(5)
-          .fill()
-          .map((el, i) => (
-            <TopicArticle key={i} />
-          ))}
-      </div>
-    </Block>
+    <div>
+      <TopicSelect />
+    </div>
   );
-}
+};
 
 export default Topic;
