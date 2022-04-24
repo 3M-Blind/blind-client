@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 export default function TopicBestArticle({ topicBestArticle }) {
   // console.log(topicBestArticle);
@@ -13,10 +13,10 @@ export default function TopicBestArticle({ topicBestArticle }) {
         @제목: {topicBestArticle.title}
       </Link>
       <div>
-        <a href="#">
+        <a href='#'>
           <i>@좋아요: {topicBestArticle.favorites}</i>
         </a>
-        <a href="#">
+        <a href='#'>
           <i>@댓글: {topicBestArticle.comment}</i>
         </a>
       </div>

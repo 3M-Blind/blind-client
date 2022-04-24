@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   HeaderBlock,
   Wrapped,
@@ -7,7 +7,7 @@ import {
   Func,
   BtnPost,
   BtnSignin,
-} from "./styles";
+} from './styles';
 
 function Header(props) {
   return (
@@ -23,7 +23,7 @@ function Header(props) {
               <SwiperWrapper>
                 <li>
                   <span>
-                    <Link to="/">홈</Link>
+                    <Link to='/'>홈</Link>
                   </span>
                 </li>
                 <li>
@@ -45,7 +45,7 @@ function Header(props) {
             {/* <BtnPost>
               <Link to="/signup">회원가입</Link>
             </BtnPost> */}
-            <Link to="/signup">회원가입</Link>
+            <Link to='/signup'>회원가입</Link>
 
             <BtnPost>글쓰기</BtnPost>
             <BtnSignin>로그인</BtnSignin>
