@@ -2,13 +2,13 @@ import { Routes, Route } from 'react-router-dom';
 
 import './App.css';
 
-import Footer from './layouts/footer/Footer';
-import Header from './layouts/header/Header';
-import HomePage from './pages/home/HomePage';
-import SigninPage from './pages/signin/SigninPage';
-import SignupPage from './pages/signup/SignupPage';
-import TopicsPage from './pages/Topics/TopicsPage';
-import PostPage from './pages/Post/PostPage';
+import Header from './components/common/Header';
+import Footer from './components/common/Footer';
+import HomePage from './pages/HomePage';
+import SigninPage from './pages/SigninPage';
+import SignupPage from './pages/SignupPage';
+import TopicsPage from './pages/TopicsPage';
+import PostPage from './pages/PostPage';
 
 function App() {
   return (

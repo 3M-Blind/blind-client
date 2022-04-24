@@ -7,16 +7,18 @@ import {
   Func,
   BtnPost,
   BtnSignin,
-} from './styles';
+} from './styles/Header.styles';
 
 function Header(props) {
   return (
     <HeaderBlock>
       <Wrapped>
-        <h1>
-          <a>Blind</a>
-          <em>Topic</em>
-        </h1>
+        <Link to='/'>
+          <h1>
+            <a>Blind</a>
+            <em>Topic</em>
+          </h1>
+        </Link>
         <nav>
           <div>
             <div>
@@ -48,7 +50,9 @@ function Header(props) {
             <Link to='/signup'>회원가입</Link>
 
             <BtnPost>글쓰기</BtnPost>
-            <BtnSignin>로그인</BtnSignin>
+            <Link to='signin'>
+              <BtnSignin>로그인</BtnSignin>
+            </Link>
           </div>
         </Func>
       </Wrapped>
