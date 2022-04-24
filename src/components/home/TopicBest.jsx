@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-import { Block } from './TopicBest.styles';
+import { Block } from './styles/TopicBest.styles';
 import TopicBestArticle from './TopicBestArticle';
 import { useTopicBestArticles } from '../../DB/DummyLoader';
 
 function TopicBest() {
   const topicBestArticleList = useTopicBestArticles();
-
+  console.log(topicBestArticleList);
   return (
     <Block>
       <h2>

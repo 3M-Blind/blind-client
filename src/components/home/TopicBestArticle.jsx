@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 export default function TopicBestArticle({ topicBestArticle }) {
-  // console.log(topicBestArticle);
+  console.log(topicBestArticle);
   return (
     <div>
       <span>

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Block } from './styles/HomePage.styles';
 
-import Search from '../components/search/Search';
-import TopicBest from '../components/topicBest/TopicBest';
-import ListRanking from '../components/listRanking/ListRanking';
+import Search from '../components/common/Search';
+import TopicBest from '../components/home/TopicBest';
+import RankingList from '../components/home/RankingList';
 
 function HomePage(props) {
   return (
@@ -20,7 +20,7 @@ function HomePage(props) {
         <div></div>
       </div>
       <aside className='aside'>
-        <ListRanking />
+        <RankingList />
       </aside>
     </Block>
   );
